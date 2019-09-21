@@ -12,26 +12,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="libs/owl/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="libs/owl/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="libs/izimodal/iziModal.min.css">
     <link rel="stylesheet" href="css/style.css">
     
 </head>
  
 <body>
     <!-- Здесь пишем код -->
-	<div class="container">
+	<div class="container-fluid">
         <div class="row">
             <div class="owl-carousel">
-                <div><img src="https://fakeimg.pl/350x200/?text=Hello"></div>
-                <div> Your Content </div>
+                <div><img src="https://fakeimg.pl/1920x300/?text=Slide1"></div>
+                <div><img src="https://fakeimg.pl/1920x300/?text=Slide2"></div>
+
             </div>
         </div>
     </div>
 
+    <!-- Modal -->
+    <div id="modal" class="modal" data-iziModal-title="Обратная связь"> <!-- data-iziModal-fullscreen="true"  data-iziModal-title="Welcome"  data-iziModal-subtitle="Subtitle"  data-iziModal-icon="icon-home" -->
+    <!-- Modal content -->
+
+        <!-- Mail form -->
+        <form class="sendform">
+            <!-- Hidden Required Fields -->
+            <input type="hidden" name="project_name" value="Site Name">
+            <input type="hidden" name="admin_email" value="admin@mail.com">
+            <input type="hidden" name="form_subject" value="Form Subject">
+            <!-- END Hidden Required Fields -->
+        
+            <input type="text" name="Name" placeholder="You name..." required><br>
+            <input type="text" name="E-mail" placeholder="You E-mail..." required><br>
+            <input type="text" name="Phone" placeholder="You phone..."><br>
+            <button>Отправить</button>
+        </form>
+
+    </div>
+    <!-- Trigger to open Modal -->
+    <a href="#" data-izimodal-open="#modal" >Modal</a>
+
+
+
 
 
     <div class="hidden"></div><!-- /.hidden -->
+    <div class="loader">
+        <div class="loader_inner"></div>
+    </div>
     <script src="libs/jquery/jquery.min.js"></script>
+    <script src="libs/waypoints/waypoints.min.js"></script>
     <script src="libs/owl/owl.carousel.min.js"></script>
+    <script src="libs/plugins-scroll/plugins-scroll.js"></script>
+    <script src="libs/izimodal/iziModal.min.js"></script>
     <script src="js/common.js"></script>
 </body>
 </html>
