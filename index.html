@@ -7,64 +7,150 @@
     <meta charset="utf-8">
     <title>Заголовок</title>
     <meta name="description" content="">
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="img/favicon.png" rel="icon"  type="image/x-icon">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="libs/owl/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="libs/owl/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="libs/izimodal/iziModal.min.css">
+    <link rel="stylesheet" href="libs/fancybox/jquery.fancybox.min.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+
     
 </head>
  
 <body>
     <!-- Здесь пишем код -->
-	<div class="container-fluid">
-        <div class="row">
-            <div class="owl-carousel">
-                <div><img src="https://fakeimg.pl/1920x300/?text=Slide1"></div>
-                <div><img src="https://fakeimg.pl/1920x300/?text=Slide2"></div>
-
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <nav>
+                    <ul>
+                        <li><a href="#">Item</a></li>
+                        <li><a href="#">Item 2</a></li>
+                        <li><a href="#">Item 3</a></li>
+                        <li><a href="#">Item 4</a></li>
+                        <li><a href="#">Item 5</a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
-    </div>
-
-    <!-- Modal -->
-    <div id="modal" class="modal" data-iziModal-title="Обратная связь"> <!-- data-iziModal-fullscreen="true"  data-iziModal-title="Welcome"  data-iziModal-subtitle="Subtitle"  data-iziModal-icon="icon-home" -->
-    <!-- Modal content -->
-
-        <!-- Mail form -->
-        <form class="sendform">
-            <!-- Hidden Required Fields -->
-            <input type="hidden" name="project_name" value="Site Name">
-            <input type="hidden" name="admin_email" value="admin@mail.com">
-            <input type="hidden" name="form_subject" value="Form Subject">
-            <!-- END Hidden Required Fields -->
-        
-            <input type="text" name="Name" placeholder="You name..." required><br>
-            <input type="text" name="E-mail" placeholder="You E-mail..." required><br>
-            <input type="text" name="Phone" placeholder="You phone..."><br>
-            <button>Отправить</button>
-        </form>
-
-    </div>
-    <!-- Trigger to open Modal -->
-    <a href="#" data-izimodal-open="#modal" >Modal</a>
+    </header>
+    
+	<div class="container-fluid">
+        <div class="row">
+            <!-- Strat carousel -->
+            <div class="owl-carousel carousel">
+                <div><img src="https://fakeimg.pl/1920x300/?text=Slide1"></div>
+                <div><img src="https://fakeimg.pl/1920x300/?text=Slide2"></div>
+                <div><img src="https://fakeimg.pl/1920x300/?text=Slide1"></div>
+                <div><img src="https://fakeimg.pl/1920x300/?text=Slide2"></div>
+                <div><img src="https://fakeimg.pl/1920x300/?text=Slide1"></div>
+                <div><img src="https://fakeimg.pl/1920x300/?text=Slide2"></div>
+            </div>
+            <!-- End carousel -->
 
 
+            <div class="container">
+                
+                    <!-- Strat Modal -->
+                    <div id="modal" class="modal" data-iziModal-title="Обратная связь"> <!-- data-iziModal-fullscreen="true"  data-iziModal-title="Welcome"  data-iziModal-subtitle="Subtitle"  data-iziModal-icon="icon-home" -->
+                    <!-- Modal content -->
+            
+                        <!-- Strat Mail form -->
+                        <form class="sendform">
+                            <!-- Hidden Required Fields -->
+                            <input type="hidden" name="project_name" value="Site Name">
+                            <input type="hidden" name="admin_email" value="admin@mail.com">
+                            <input type="hidden" name="form_subject" value="Form Subject">
+                            <!-- END Hidden Required Fields -->
+                            <input type="text" name="Name" placeholder="You name..." required><br>
+                            <input type="text" name="E-mail" placeholder="You E-mail..." required><br>
+                            <input type="text" name="Phone" placeholder="You phone..."><br>
+                            <button>Отправить</button>
+                        </form>
+                        <!-- End Mail form -->
+                    </div>
+                    <!-- Trigger to open Modal -->
+                    <button href="#" data-izimodal-open="#modal" >Modal</button>
+                    <!-- End Modal -->
+
+                <h1>Тестирование h1</h1>
+                <p>Товарищи! сложившаяся структура организации влечет за собой процесс внедрения и модернизации форм развития. Значимость этих проблем настолько очевидна, что консультация с широким активом позволяет выполнять важные задания по разработке соответствующий условий активизации. Товарищи! постоянное информационно-пропагандистское обеспечение нашей деятельности требуют от нас анализа модели развития.</p>
+                <h2>Тестирование h2</h2>
+                <p>Значимость этих проблем настолько очевидна, что рамки и место обучения кадров позволяет выполнять важные задания по разработке дальнейших направлений развития. Значимость этих проблем настолько очевидна, что реализация намеченных плановых заданий способствует подготовки и реализации форм развития. С другой стороны консультация с широким активом способствует подготовки и реализации модели развития. Равным образом дальнейшее развитие различных форм деятельности требуют от нас анализа новых предложений.</p>
+                <h3>Тестирование h3</h3>
+                <p>Повседневная практика показывает, что постоянный количественный рост и сфера нашей активности требуют определения и уточнения систем массового участия. Не следует, однако забывать, что новая модель организационной деятельности обеспечивает широкому кругу (специалистов) участие в формировании направлений прогрессивного развития.</p>
+                <h4>Тестирование h4</h4>
+                <p>Не следует, однако забывать, что сложившаяся структура организации позволяет выполнять важные задания по разработке направлений прогрессивного развития. Равным образом постоянное информационно-пропагандистское обеспечение нашей деятельности в значительной степени обуславливает создание систем массового участия. Таким образом консультация с широким активом требуют определения и уточнения дальнейших направлений развития. Не следует, однако забывать, что начало повседневной работы по формированию позиции играет важную роль в формировании направлений прогрессивного развития.</p>
+            </div>
+            
+            <!-- Strat Примеры fancybox -->
+            <div class="container">
+                    <div class="row"><h1>Примеры fancybox 3</h1></div>
+                    <div class="row">
+
+                            <button data-fancybox data-type="iframe" data-src="http://codepen.io/fancyapps/full/jyEGGG/" href="javascript:;">
+                                Открыть страницу iframe
+                            </button>
+                            <button data-fancybox data-type="iframe" data-src="https://mozilla.github.io/pdf.js/web/viewer.html" href="javascript:;">
+                                Открыть PDF iframe 
+                            </button>
+
+                            <button href="https://fakeimg.pl/1920x300/?text=Slide1" data-fancybox="images" data-caption="Описание №1">Открыть картинку №1</button>
+                            <button href="https://fakeimg.pl/1920x300/?text=Slide2" data-fancybox="images" data-caption="Описание №2">Открыть картинку №2</button>
+                            
+                            <!-- Strat всплывашка -->
+                            <div style="display: none;" id="hidden-content">
+                                    <h2>Обратная связь</h2>
+                                    <!-- Strat Mail form -->
+                                    <form class="sendform">
+                                    <!-- Hidden Required Fields -->
+                                        <input type="hidden" name="project_name" value="Site Name">
+                                        <input type="hidden" name="admin_email" value="admin@mail.com">
+                                        <input type="hidden" name="form_subject" value="Form Subject">
+                                        <!-- END Hidden Required Fields -->
+                                        <input type="text" name="Name" placeholder="You name..." required><br>
+                                        <input type="text" name="E-mail" placeholder="You E-mail..." required><br>
+                                        <input type="text" name="Phone" placeholder="You phone..."><br>
+                                        <button>Отправить</button>
+                                    </form>
+                                    <!-- End Mail form -->
+                            </div>
+                            <button data-fancybox data-src="#hidden-content" href="javascript:;">
+                                Обычная всплывашка
+                            </button>
+                            <!-- End всплывашка -->
+
+                    </div><!-- /.row -->
+            </div><!-- /.container -->
+            <!-- End Примеры fancybox -->
 
 
+
+        </div><!-- end row -->
+    </div><!-- end container-fluid -->
+    
+
+    <footer class="footer navbar-fixed-bottom">
+        <div class="footer">fgdfdfgdf</div>
+    </footer>
+   
 
     <div class="hidden"></div><!-- /.hidden -->
     <div class="loader">
         <div class="loader_inner"></div>
     </div>
-    <script src="libs/jquery/jquery.min.js"></script>
-    <script src="libs/waypoints/waypoints.min.js"></script>
+    <script src="libs/jquery/jquery-3.4.1.min.js"></script>
     <script src="libs/owl/owl.carousel.min.js"></script>
+    <script src="libs/waypoints/waypoints.min.js"></script>
+    <script src="libs/modernizr/modernizr.js"></script>
     <script src="libs/plugins-scroll/plugins-scroll.js"></script>
     <script src="libs/izimodal/iziModal.min.js"></script>
+    <script src="libs/fancybox/jquery.fancybox.min.js"></script>
     <script src="js/common.js"></script>
 </body>
 </html>

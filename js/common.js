@@ -1,11 +1,30 @@
 $(document).ready(function(){
 
-	$('.owl-carousel').owlCarousel({
+	$('.carousel').owlCarousel({
 		loop:true,
 		items:1,
 		margin:10,
-		nav:true,
-    })
+        nav:true,
+        autoplay:true,
+        autoplayTimeout:10000,
+        autoplayHoverPause:true
+    });
+
+    //SVG Fallback
+	if(!Modernizr.svg) {
+		$("img[src*='svg']").attr("src", function() {
+			return $(this).attr("src").replace(".svg", ".png");
+		});
+    };
+
+    //fancybox iframe + pdf
+    $('[data-fancybox]').fancybox({
+        toolbar  : false,
+        smallBtn : true,
+        iframe : {
+            preload : false
+        }
+    });
 
     //iziModal
     $(".modal").iziModal({
