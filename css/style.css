@@ -51,6 +51,9 @@ html {
     position: relative;
     min-height: 100%;
 }
+h1, h2, h3, h4 {
+    margin-bottom: 0px;
+}
 body {
     padding: 0;
     margin: 0;
@@ -59,7 +62,7 @@ body {
     font-family: Tahoma,sans-serif;
     font-weight: 400;
     color: #444;
-    margin-bottom: 60px;// значение высоты #footer
+    margin-bottom: 80px;// значение высоты #footer
 }
 .hidden {
 	display: none;
